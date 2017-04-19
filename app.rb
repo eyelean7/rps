@@ -8,6 +8,6 @@ get('/') do
 end
 
 get('/rock_paper_scissors') do
-  @rock_paper_scissors = params.fetch('rock_paper_scissors').scrabble()
-  erb(:scrabble)
+  @rock_paper_scissors = params.fetch('throw').beats?(params.fetch('toss'))
+  erb(:rock_paper_scissors)
 end

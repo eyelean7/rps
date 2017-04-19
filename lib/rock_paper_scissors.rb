@@ -1,25 +1,15 @@
 class String
   define_method(:beats?) do |contest|
-    if self == "rock" && contest == "scissors"
-      return true
+    if self == contest
+      return 'tie'
+    elsif self == "rock" && contest == "scissors"
+      return 'player 1'
     elsif self == "scissors" && contest == "paper"
-      return true
+      return 'player 1'
     elsif self == "paper" && contest == "rock"
-      return true
-    end
-    if self == "rock" && contest == "paper"
-      return false
-    elsif self == "scissors" && contest == "rock"
-      return false
-    elsif self == "paper" && contest == "scissors"
-      return false
-    end
-    if self == "rock" && contest == "rock"
-      return 'tie'
-    elsif self == "scissors" && contest == "scissors"
-      return 'tie'
-    elsif self == "paper" && contest == "paper"
-      return 'tie'
+      return 'player 1'
+    else
+      return 'player 2'
     end
   end
 end
