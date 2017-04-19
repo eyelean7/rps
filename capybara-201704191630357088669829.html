@@ -1,9 +1,19 @@
-<h1>Rock Paper Scissors</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Rock Paper Scissors</h1>
 <div class="row">
   <div class="col-md-6" id="player1">
     <h2>Player 1</h2>
     <h3>(Player 2 look away!!)</h3>
-    <form action="/rock_paper_scissors" id='form'>
+    <form action="/rock_paper_scissors">
       <div class="radio">
         <label>
           <input id="rock1" type="radio" name="throw" value="rock">
@@ -50,10 +60,11 @@
       </div>
       <button type="submit" class="btn btn-success" id ="second">Send</button>
     </form>
-    <h1>Winner</h1>
-    <h2><%=@rock_paper_scissors%></h2>
-
   </div>
 
 
 </div>
+
+    </div>
+  </body>
+</html>
